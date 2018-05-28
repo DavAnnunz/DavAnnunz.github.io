@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Davide Annunziata - WebSite </title>
+	<link rel="stylesheet" href="newstyle.css">
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Jquery -->
+  <script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+<!-- nav bar  large-->
+
+<div class="top">
+	<ul class"navbar h-centre ">
+	  <li class="nav-active"> <a class="scroll" href="#home">Home</a> </li>
+	  <li class=""> <a class="scroll" href="#about">About</a> </li>
+	  <li class=""> <a class="scroll" href="#project">Projects</a> </li>
+	  <li class=""> <a class="scroll" href="#contact">Contats</a> </li>
+	</ul>
+  <!-- my scroll function -->
+  <script src="smoothScrolling.js"></script>
+</div>
+<!-- header website - home -->
+<div class="header parallax parallax-opacity parallax-bg0" id="home">
+  <div class="box">
+		<h1>My Website</h1>
+  	<p>A website created by me.</p>
+	</div>
+</div>
+
+<!-- About me -->
+<div class=" content container"  id="about">
+  <h3 class="h-centre">About Me</h3>
+  <p>
+    Graduated in October 2017 in IT Engineering,
+		I am now working on personal projects to practice and challenge myself.
+		I am motivated, dedicated and hungry of knowledge,
+		seeking an IT position in which I can apply the professional and technical skills
+		I developed with passion in the past 5+ years.
+		I have improved my problem-solving skills throughout the studies and my personal projects,
+		noticing a positive outcome on a day-to-day basis.
+  </p>
+  <div class="row">
+    <div class="half h-centre">
+      <p><b>Davide annunziata</b></p>
+      <img class="round opacity" src="img/avatar.png" alt="avatar">
+    </div>
+
+    <div class="half h-centre" style="padding: 0 1em;">
+      <p><b>Languages</b></p>
+      Italian
+      <div class="skill-container">
+        <div class="skills italian">|</div>
+      </div>
+      English
+      <div class="skill-container">
+        <div class="skills english">|</div>
+      </div>
+			French
+      <div class="skill-container">
+        <div class="skills french">|</div>
+      </div>
+    </div>
+  </div> <!-- endo of first row -->
+
+  <div class="row">
+    <div class="half h-centre" style="padding:0 1em">
+      <p><b>I have experience with</b></p>
+
+      <table id="languages">
+        <tr>
+          <th>Language</th>
+          <th>Time of experience</th>
+        </tr>
+        <tr>
+          <td>C#/Unity3D Engine</td>
+          <td>3 Years</td>
+        </tr>
+        <tr>
+          <td>C/C++</td>
+          <td>2 Years</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>6 Months</td>
+        </tr>
+        <tr>
+          <td>Java</td>
+          <td>1 Year</td>
+        </tr>
+        <tr>
+          <td>Web Develping (HTML, CSS, PHP, Javascript, XML)</td>
+          <td>1 Year</td>
+        </tr>
+        <tr>
+          <td>SQL</td>
+          <td>1 Year</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="half h-centre" style="padding: 0 1em;">
+      <p><b>I also studied about</b></p>
+      <table id="knoledge">
+        <tr>
+          <th>Knowledge</th>
+        </tr>
+        <tr>
+          <td>theory of algorithm</td>
+        </tr>
+        <tr>
+          <td>UML and code design</td>
+        </tr>
+      </table>
+    </div>
+  </div> <!-- end of last row -->
+
+	<!--
+	  <p class="h-centre">
+			<b>Other about me:</b> <br />
+			asdasdasd
+		</p>
+	-->
+</div>
+
+<!-- header website - home -->
+<div class="section parallax parallax-opacity parallax-bg1">
+  <h1>PROJECTS</h1>
+</div>
+
+<!-- My projects -->
+<div class=" content container" id="project">
+
+	<h3 class="h-centre">My Projects</h3>
+
+  <!-- Tab links -->
+  <div class="tab">
+    <button class="tablinks" onclick="openProj(event, 'roundwolrd')" id="defaultOpen">Around the world</button>
+    <button class="tablinks" onclick="openProj(event, 'rpgsystem')">RPG System</button>
+  </div>
+
+  <!-- Around the world -->
+  <div id="roundwolrd" class="tabcontent">
+    <h3 class="">Around the world</h3>
+    <h5>Description</h5>
+    <p>
+      The first challenge I chose to test myself is the creation of a mobile application.
+			It is a game based on the rotation of an object around a sphere with the aim of
+			collecting points within the end of the time.
+			It moves forward during the game and the player has to rotate the world sphere to
+			hit the plus objects and avoid the negative ones.
+			There are two way to control the game, one based on two buttons to turn to rigth or left,
+			the other one use a right or left swipe to rotate the sphere.
+    </p>
+
+    <h5>My goals with this project:</h5>
+    <p>
+			I started this project to improve my knowledge about the 3D environment using 3D models,
+			I especially tried to use quaternion and interpolation.
+    </p>
+
+<!-- PHOTO _ LINK-->
+		<div class="row">
+			<!-- GALLERY -->
+			<div class="two-of-3">
+
+
+				<!-- The grid: four columns -->
+				<div class="gallery-row">
+				  <div class="gallery-column">
+				    <img src="img/ATW/atw_01.png" alt="Main Menu" onclick="openImg01(this);">
+				  </div>
+				  <div class="gallery-column">
+				    <img src="img/ATW/atw_02.png" alt="In Game View" onclick="openImg01(this);">
+				  </div>
+				  <div class="gallery-column">
+				    <img src="img/ATW/atw_03.png" alt="Settings" onclick="openImg01(this);">
+				  </div>
+				  <div class="gallery-column">
+				    <img src="img/ATW/atw_04.png" alt="Game Over Screen" onclick="openImg01(this);">
+				  </div>
+				</div>
+				<!-- The expanding image container -->
+				<div class="gallery-container h-centre">
+				  <!-- Close the image -->
+				  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+				 	<!-- Expanded image -->
+					<div id="imgtext-01" style="color:#fff; margin:0; padding:1em"></div>
+				  <img id="expandedImg-01" style="width:50%;">
+
+				</div>
+
+
+			</div>
+			<!-- DOWLOAD -->
+			<div class="one-of-3 h-centre v-centre">
+				<a href="#project">PlayStore Download(Soon..)</a> <br /><br />
+				<a href="https://drive.google.com/file/d/1h9DZu1LQuZq7YZGVfLiCQIWTuH6LMYp_/view" target="_blank">Source Download(Drive)</a>
+			</div>
+		</div>
+
+
+  </div> <!-- end of around the world proj -->
+
+
+  <!-- Around the world -->
+  <div id="rpgsystem" class="tabcontent">
+    <h3 class="">RPG System</h3>
+    <h5>Description</h5>
+    <p>
+      At the end of the first project  decided to start a second project to try and reach a higher goal.
+			 I am creating the base for a videogame similar to an Action RPG and a Hack and Slash game.
+
+    </p>
+
+    <h5>My goals with this project:</h5>
+    <p>
+			Particularly, I wanted to improve the using of events,
+			delegated methods, derived class, singletons, seeing a good improvement for every single step.
+    </p>
+
+		<!-- PHOTO _ LINK-->
+				<div class="row">
+					<!-- GALLERY -->
+					<div class="two-of-3">
+
+						<!-- The grid: four columns -->
+						<div class="gallery-row">
+						  <div class="gallery-column">
+						    <img src="img/rpg/rpg_01.png" alt="Inventory and Items" onclick="openImg02(this);">
+						  </div>
+						  <div class="gallery-column">
+						    <img src="img/rpg/rpg_02.png" alt="Damage Equipment with Sword" onclick="openImg02(this);">
+						  </div>
+						  <div class="gallery-column">
+						    <img src="img/rpg/rpg_03.png" alt="Defensive Equipment with Bow" onclick="openImg02(this);">
+						  </div>
+						  <div class="gallery-column">
+						    <img src="img/rpg/rpg_04.png" alt="Fighting Enemies and HP Bars" onclick="openImg02(this);">
+						  </div>
+						</div>
+						<!-- The expanding image container -->
+						<div class="gallery-container h-centre">
+						  <!-- Close the image -->
+						  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+						 	<!-- Expanded image -->
+							<div id="imgtext-02" style="color:#fff; margin:0; padding:1em"></div>
+						  <img id="expandedImg-02" style="width:100%; margin:0">
+						</div>
+
+					</div>
+
+					<div class="one-of-3 h-centre v-centre">
+						<a href="https://drive.google.com/open?id=1v7-CKAUvDvzsBms9jeMS0iNtTPAzJ-48" target="_blank">Source Download(Drive)</a> <br /><br />
+						<a href="https://drive.google.com/open?id=1Z3jSGEfN8DnLmTJVaEFUmuaR9XvcBWX7" target="_blank">Test Built Download(Drive)</a>
+					</div>
+				</div>
+
+  </div> <!-- end of around the world proj -->
+
+
+  <!-- my projects function -->
+  <script src="myProjects.js"></script>
+	<script src="modalImg.js"></script>
+</div>
+
+<!-- header website - home -->
+<div class="section-contact parallax parallax-opacity parallax-bg2" id="contact">
+  <h1>CONTACT</h1>
+</div>
+
+<!-- My Contacts -->
+<div class="content container h-centre" >
+  <h3 >WHERE I LIVE NOW
+  <br /><span class=" ">Lurgan - NI </span></h3>
+  <div class="contact-half">
+	  <div class="info">
+	    <i class="fa fa-envelope" style="margin-right: 10px:"></i>Email: asdasd at asdasd . com <br />
+	    <i class="fa fa-file-text"></i>My Resume: <a href="img/avatar.png" download="Davide Annunziata - CV">Here</a>
+	  </div>
+	</div>
+</div>
+
+<footer class="h-centre opacity">
+  <a class="button foot-button hide-small" href="#home">To the top</a>
+  <div class="social">
+		<a href="#about"><i class="fa fa-instagram"></i></a>
+		<a href="#about"><i class="fa fa-linkedin"></i></a>
+		<a href="#about">CV</a>
+  </div>
+  <p style="margin-bottom:32px"> Web Site developed by <a href="#about" style="color:gray">Davide Annunziata</a> </p>
+</footer>
+
+
+
+<!-- RESUME SECTION  -->
+<script src="overlay.js"></script>
+<div id="overlay" onclick="">
+	<div id="resume">
+		<h1>Davide Annunziata </h1>
+		<p> basbasb </p>
+	</div>
+</div>
+
+
+</body>
+</html>
