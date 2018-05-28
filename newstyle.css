@@ -139,13 +139,13 @@ footer{
 .box{
 	background-color: black;
 	margin: 0 auto;
-	width: 30%;
+	width: 20%;
 	padding: .1em;
 }
 /* big*/
-@media (max-width: 110rem){
+@media (max-width: 95rem){
 	.box{
-		width: 40%;
+		width: 25%;
 		padding: .1em;
 	}
 
@@ -160,13 +160,13 @@ footer{
 	}
 }
 /* medium */
-@media (max-width: 50rem){
+@media (max-width: 55rem){
 	.header {
 		height: 300px;
 		padding: 9vh;
 	}
 	.box{
-		width:65%;
+		width:35%;
 	}
 
 	.header h1 {
@@ -184,7 +184,7 @@ footer{
 @media(max-width: 30rem)
 {
 	.box{
-		width: 80%
+		width: 75%
 	}
 }
 
